@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Adopt Cat Detail</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="detailStyle.css">
 </head>
 <body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#detail" onclick="w3_close()" class="w3-bar-item w3-button">Detail</a>
+  <a href="#form" onclick="w3_close()" class="w3-bar-item w3-button">신청 Form</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16">Adopt cat</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="detail">
+    <div class="detail-content">
+      <img src="https://cdn.pixabay.com/photo/2020/03/23/08/45/cat-4959941_960_720.jpg" alt="Cat Detail picture">
+      <h3>루이 (3세, 남아)</h3>
+      <p class="detail-content-text">
+        안녕. 내 이름은 루이. 보시다시피 굉장히 품위 있는 고양이지.<br>
+        이 뛰어난 외모로 스트릿 시절 꽤 많은 고양이들과 인간들에게 인기가 있었다고.<br>
+        물론 화려했던 내 스트릿 생활도 좋았지만, 이제는 집사를 찾아 평안한 묘생을 보내고자 왔어.<br>
+        인간을 맞이하기 위해 접종과 중성화 큼큼.. 까지 끝냈다고.<br>
+        내가 바라는 것은 뭐 간단해. 맛있는 밥, 따뜻한 잠자리, 화려한 장난감, 깨끗한 물.<br>
+        나를 반려하기 위해 이 정도는 기본이라 생각해.<br>
+        아, 그리고 난 외동이 좋아. 예쁨을 오롯이 혼자 받고 싶거든.<br>
+        나를 외동으로 데려가겠다는 인간을 우선시 하도록 하지.<br>
+        그럼 많은 신청바랄게.<br>
+      </p>
+    </div>
+  </div>
+  
+  <hr id="form">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>입양 신청 폼</h3><br>
+    <img src="https://placeimg.com/1000/1000/nature" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>I am Who I Am!</b></h4>
+      <h6><i>With Passion For Real, Good Food</i></h6>
+      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
     
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
 </body>
 </html>
