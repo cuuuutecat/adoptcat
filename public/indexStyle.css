@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Goyang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Goyang", sans-serif;
+    font-weight: 700;
+}
+.w3-bar-block .w3-bar-item {padding:20px}
+
+body, .w3-center, .w3-button {
+    background-color: #F2D9BB;
+    color: #261303;
+}
+
+.w3-center{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.w3-quarter {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.w3-quarter > p {
+    font-weight: 500;
+    color: #593719;
+}
