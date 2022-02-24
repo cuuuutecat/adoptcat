@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <!--kakao share-->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+    <!--fontawesome-->
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+    <!--style-->
+    <link rel="stylesheet" href="confirmationStyle.css">
+
+    <!--script-->
+    <script refer src="confirmationScript.js"></script>
+
+    <!--style from the template
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    -->
+
+    <style>
+        @font-face {
+          font-family: 'Goyang';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Goyang.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Goyang"}
+      .w3-bar-block .w3-bar-item {padding:20px}
+    </style>
+
+    <title>AdoptMe</title>
+</head>
+<body>
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+        class="w3-bar-item w3-button">Close Menu</a>
+        <a href="#detail" onclick="w3_close()" class="w3-bar-item w3-button">Detail</a>
+        <a href="#form" onclick="w3_close()" class="w3-bar-item w3-button">신청 Form</a>
+    </nav>
+    
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">
+            <a href="index.html">
+            <img src="\image\adoptme-logo.png" alt="Me" class="w3-image" style="display:block;margin:auto" width="70px">
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px;">
+
+    <article>
+        <section>
+            <div class="container">
+                <div class="top">
+                    <figure>
+                        <img class="top-overlayed-img" src="\image\bg_top-1.jpg" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <div class="top-overlayed-text">
+                        <span class="top-text-top">"Can not wait to meet you!"<br><br>"meow!"</span>
+                    </div> 
+                </div>
+                <br>
+                <div class="content">
+                    <div class="content-form">
+                        <table>
+                            <caption>입양 신청 확인</caption>
+                            <thead>
+                                <tr>
+                                    <th>신청자 이름</th>
+                                    <th>나이</th>
+                                    <th>성별</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>김고양</td> 
+                                    <td>22</td>
+                                    <td>여</td>
+                                </tr>
+                            </tbody>
+                    
+                            <thead>
+                                <tr>
+                                    <th>연락처</th>
+                                    <th>가족 구성원</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>010-0000-0000</td>
+                                    <td>부모님, 본인 총 성인 3명</td>
+                                </tr>
+                                
+                            </tbody>
+                    
+                            <thead>
+                                <tr>
+                                    <th>신청동기</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">“이승에서 어떻게 고양이를 대하느냐가 천국에서의 신분을 결정한다.” (로버트 A. 하인라인) “고양이의 사랑보다 위대한 선물이 있을까?” (찰스 디킨스) “고양이는 절대적인 정직함을 지니고 있다.” (헤밍웨이)
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            <thead>
+                                <tr>
+                                    <th>새 가족을 위해 기억해 주세요</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td id="td-no-padding" colspan="3">마당묘, 산책묘로 키우지 않겠습니다. <span>YES!</span></td>
+                                </tr>
+                                <tr>
+                                    <td id="td-no-padding" colspan="3">중성화를 꼭 시키겠습니다. <span>YES!</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                    </div>
+                </div>
+
+                <p>기재하신 연락처로 3일 이내에 개별 연락 드립니다.</p>
+
+                <div class="bottom">
+                    <a href="javascript:shareLink()">
+                        <img id="kakaoLogo" src="\image\kakao-logo.png" alt="kakao-logo">
+                    </a>
+
+                    <a href="#" id="sns_urlCoby" class="btn_share_sns" title="새창" onclick="clip(); return false;">
+                        <img id="linkLogo" src="\image\link-logo.png" alt="kakao-logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+    </article>
+    <hr>
+    
+    <footer class="w3-row-padding w3-padding-32">
+        <div class="w3-third">
+          <h3>About Us</h3>
+          <p>상호 : Adopt Cat </p>
+          <p>대표자(성명) : 김야옹</p>
+          <p>대표전화 : 02-1234-5678</p>
+          <p>주소 : 귀여운고양시 냐옹구 야옹로 어돕캣</p>
+          <p>사업자등록번호 : 123-45-67890</p>
+          <p>동물판매업 등록번호 : 1234111-123-1234-1234</p>
+          <h6><i> Copyright (c) 2022 Adopt Cat All rights reserved.</i></h6>
+        </div>
+      </footer>
+
+
+
+
+<!-- End page content -->
+<script>
+
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
