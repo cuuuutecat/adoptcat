@@ -10,7 +10,7 @@ body,h1,h2,h3,h4,h5,h6 {
 }
 .w3-bar-block .w3-bar-item {padding:20px}
 
-body, .w3-center, .w3-button{
+body, .w3-center, .w3-button {
     background-color: #F2D9BB;
     color: #261303;
 }
@@ -19,7 +19,6 @@ body, .w3-center, .w3-button{
 
 .detail-content-text{
     font-size: 1.25rem;
-
 }
 .detail-form-title{
     font-weight: 700;
@@ -33,7 +32,6 @@ body, .w3-center, .w3-button{
 div.form-context {
     display: table-row;
     vertical-align: middle;
-
 }
 
 label, input {
