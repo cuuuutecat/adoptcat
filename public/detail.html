@@ -55,7 +55,7 @@
   <div class="w3-container w3-padding-32 w3-center">  
     <h3 class="detail-form-title">입양 신청 폼</h3><br>
     <div class="w3-padding-32">
-      <form action="" method="post" class="form">
+      <form action = "confirmation.html" method="get" class="form" id="form">
         <div class="form-context">
           <label for="name">이름: </label>
           <input type="text" name="name" id="name" required>
@@ -70,7 +70,7 @@
         </div>
         <div class="form-context">
           <label for="contect">연락처: </label>
-          <input type="tel" name="contect" id="contect" required>
+          <input type="text" name="contect" id="contect" required>
         </div>
         <div class="form-context">
           <label for="family">가족구성원: </label>
@@ -78,15 +78,13 @@
         </div>
         <div class="form-context">
           <label for="reason">신청동기: </label>
-          <textarea class="form-context-textarea" placeholder="신청동기를 입력하세요"></textarea>
+          <textarea class="form-context-textarea" id="reason" placeholder="신청동기를 입력하세요"></textarea>
         </div>
         <div class="form-context">
           <label>제출하기: </label>
           <input type="submit" value="SUBMIT!" class="submit-btn">
         </div>
-        <div class="form-context">
-          
-        </div>
+        
       </form>
     </div>
   </div>
@@ -110,17 +108,6 @@
 
 <!-- End page content -->
 </div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
 
 </body>
 </html>
