@@ -1,4 +1,4 @@
-Kakao.init('e2cd53463c5f16d89c7248527235444b');
+Kakao.init("e2cd53463c5f16d89c7248527235444b");
 function shareLink() {
     Kakao.Link.sendScrap( {
       requestUrl: location.href
@@ -19,6 +19,30 @@ function clip(){
 }
 
 
-function agreementIconLight(){
-  
-}
+
+
+
+
+
+// const urlBotton = document.querySelector("#linkLogo");
+
+// urlBotton.addEventListener("click", () => {
+//     var url = '';
+// 	var textarea = document.createElement("textarea");
+// 	document.body.appendChild(textarea);
+// 	url = window.document.location.href;
+// 	textarea.value = url;
+// 	textarea.select();
+// 	document.execCommand("copy");
+// 	document.body.removeChild(textarea);
+
+//     const xhr = new XMLHttpRequest();
+
+//     const url = "/shorturl";
+
+//     const responseData = xhr.responseText;
+
+//     xhr.open("POST", url);
+//     xhr.send(jsonToString);
+// })
+
