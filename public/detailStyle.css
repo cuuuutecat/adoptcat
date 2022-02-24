@@ -15,14 +15,44 @@ body, .w3-center, .w3-button {
     color: #261303;
 }
 
-.w3-center{
-    font-weight: 700;
-    font-size: 2rem;
-}
+
 
 .detail-content-text{
     font-size: 1.25rem;
 }
 .detail-form-title{
     font-weight: 700;
+}
+
+.form {
+    display: table;
+    margin-left: 38%;
+}
+
+div.form-context {
+    display: table-row;
+    vertical-align: middle;
+
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+label {
+    padding-right: 10px;
+}
+
+.form-context-textarea{
+    resize: none;
+    height: 12rem;
+    width: 10rem;
+}
+
+.submit-btn{
+    width: 100%;
+    background-color: #A6774E;
+    color: #fff;
 }
