@@ -63,12 +63,21 @@ const formName = getParameterByName('name');
 console.log(formName, typeof formName);
 const formAge = getParameterByName('age');
 const formGender = getParameterByName('gender');
-const formTel = getParameterByName('tel');
+const formContect = getParameterByName('contect');
 const formFamily = getParameterByName('family');
 
 const cName = document.querySelector(".confirmation-name");
-const tmp = document.querySelector(".tmp");
-console.log(tmp);
-console.log(cName);
 cName.textContent = formName;
+
+const cAge = document.querySelector(".confirmation-age");
+cAge.textContent = formAge;
+
+const cGender = document.querySelector(".confirmation-gender");
+cGender.textContent = formGender;
+
+const cContect = document.querySelector(".confirmation-contect");
+cContect.textContent = formContect;
+
+const cFamily = document.querySelector(".confirmation-family");
+cFamily.textContent = formFamily;
 
