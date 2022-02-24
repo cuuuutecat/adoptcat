@@ -30,3 +30,7 @@ body, .w3-center, .w3-button {
     font-weight: 500;
     color: #593719;
 }
+
+.w3-image {
+    width : 60%;
+}
