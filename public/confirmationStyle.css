@@ -390,8 +390,21 @@ p {
 
 /****************************************************************************************/
 /*footer*/
+.w3-third > h3 {
+    color: #000;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
 .w3-third > p {
+    color: #000;
     text-align: left;
     margin: 0px 0px 15px 0px;
-
+    font-weight: 700;
 }
+
+.w3-third > h6 {
+    color: #000;
+    font-weight: 700;
+}
+
