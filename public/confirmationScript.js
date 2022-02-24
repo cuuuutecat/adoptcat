@@ -24,6 +24,7 @@ function clip(){
 
 
 
+
 // const urlBotton = document.querySelector("#linkLogo");
 
 // urlBotton.addEventListener("click", () => {
@@ -45,4 +46,29 @@ function clip(){
 //     xhr.open("POST", url);
 //     xhr.send(jsonToString);
 // })
+
+
+function agreementIconLight(){
+  
+}
+
+function getParameterByName(parmName) {
+    parmName = parmName.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    const regex = new RegExp("[\\?&]" + parmName + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+const formName = getParameterByName('name');
+console.log(formName, typeof formName);
+const formAge = getParameterByName('age');
+const formGender = getParameterByName('gender');
+const formTel = getParameterByName('tel');
+const formFamily = getParameterByName('family');
+
+const cName = document.querySelector(".confirmation-name");
+const tmp = document.querySelector(".tmp");
+console.log(tmp);
+console.log(cName);
+cName.textContent = formName;
 
